@@ -22,7 +22,7 @@ more players
 [x] Ensure team cost does not exceed £100 and no more than 3 players are selected from any 
 one team.
 
-This project includes 9 main classes that are used to achieve the above functionality. 
+-This project includes 9 main classes that are used to achieve the above functionality.-
 
 *Player* – The Player class is an abstract class that outlines all the methods that will be included for 
 each player. 
@@ -46,12 +46,9 @@ position field that is used to uniquely identify the player as a goalkeeper.
 buttons are:
 
 *Readfile or Automatic selection by Price* 
-– The action attached to this button is implemented in the 
-Readfile.java class. The first function that come in to play in this class is the getFileData() method. 
-This method returns a stack of player objects that are separated by player type. This function sequentially 
-reads through each file and creates an object for each player based on their position. This method 
-then returns a Stack of Player objects to the main action performed method. The stack that was 
-returned was then sorted by highest priced player using the collection 
+
+- The action attached to this button is implemented in the 
+Readfile.java class. The first function that come in to play in this class is the getFileData() method. This method returns a stack of player objects that are separated by player type. This function sequentially reads through each file and creates an object for each player based on their position. This method then returns a Stack of Player objects to the main action performed method. The stack that was returned was then sorted by highest priced player using the collection 
 API sort() method using the PlayerComparator. 
 
 - Using this newly sorted stack the highest priced players were chosen and added to a new 
