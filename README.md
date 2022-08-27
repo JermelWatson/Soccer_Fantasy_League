@@ -62,12 +62,13 @@ the stack is checked and the method return true if the team appears 3 times alre
 otherwise.
 
 *AutoByPoints*
-– The actionperformed method on the Automatically select players by points button is 
+
+- The actionperformed method on the Automatically select players by points button is 
 implemented in this class. The first method encountered in this class is the getDataFile2() 
 method and it operates in a similar manner. The returned stack was the sorted by highest priced players 
 firsts using the for a similar selection method.
 
--The algorithm tries to create a team of the highest priced players. This is done by first using
+- The algorithm tries to create a team of the highest priced players. This is done by first using
 the function findHigh() to identify the highest priced player in the stack. This player is then
 added to the new list of players and removed from the stack. If the budget is exceeded then 
 the chosen players are discarded and the method getLessPointPlayer () is used to return a 
@@ -77,6 +78,7 @@ the highest price players that can be supported by the budget.The countNumTeamA(
 that no more than three players are chosen from any one team.
 
 *SelectionWindow or Manual Selection*
+
 - The Manual Selection button implements the algorith that allows the user to manually select a list of players. The first method in this class is the getDataFile3() method. This method is slightly differentfrom the others as it returns an ArrayList of Player objects instead of a Stack. The players are the sorted by points using the collection API sort using the PlayerComparatorPoints. This list of players is the seperated in two and the first half is 
 saved in a new list. 
 
@@ -84,35 +86,46 @@ saved in a new list.
 interphase. The left display was used to display the initial list of players loaded and the right display was used to display the players chosen by the user.
 
 *Load Initial list*
-– This button loads the initial list of players to be chosen from by the user.
+
+- This button loads the initial list of players to be chosen from by the user.
+
+[ Additional buttons ]
 
 *Add players* 
-- This allows the user to add players unto their list.
-o Features to note: 
+
+-This allows the user to add players unto their list. Features to note: 
+
 [x] As the players are being added, their price is deducted from the budget. If 
 the user tries to exceed that budget a message dialog box pops up notifying 
 them that the budget is exceeded. 
+
 [x] Also, if the user tries to select more than the player limit per position a 
 message dialog box is shown that player limit is reached. If the user tries to 
 select more than 15 players a dialog box pops up notifying them that the 
 player limit is reached.
 
 *Remove Player*
+
 – This button is used to remove a selected player from the list. As the player
 is removed their price is re - added to the budget. If the price is not reciprocated properly, 
 double tap this button to get £100.
 
-*Remove all* – This button is used to remove all the selected players from the users list of 
+*Remove all* 
+
+– This button is used to remove all the selected players from the users list of 
 selected players. Double tap this button to return the budget to get £100. 
 
 *Show more player*
+
 – This button is used to load the second half of the list of players. 
 
 *Show by team*
+
 – This button will sort the players by team and highest points in the previous
 season. This will allow the user to select players from their favorite team.
 
 *Search* 
+
 – This button allows the user to search for a player by name and add them to their 
 list of players. 
 
@@ -133,13 +146,20 @@ classes.
 **Polymorphism** – the abstract class player is a main type that has similar types defender, midfielder, goalkeeper and forward that have polymophic methods. eg. tostring, getplayername(), etc.
 
 *Issues Faced -* 
+
 [x] Bugs – infinite looping and type mismatch errors
+
 [x] Files not merging
+
 [x] Files not found
+
 [x] Errors in parsing files due to mismatch data in files. Missing # for spliting files
 Solution taken.
+
 [x] Testing codes regularly
+
 [x] Reviewing each others' codes
+
 [x] Files were closely examined and changes made as necessary.
 
 If you have any questions about this project you can contact us via email at 
