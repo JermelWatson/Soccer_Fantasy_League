@@ -8,12 +8,17 @@ football system. The members of Group 3 are Allan Muir, Jermel Watson and Julio 
 system is an graphical user interface that performs the following functions:*
 
 [x] Automatically select players by selecting highest priced players first
+
 [x] Automatically select players by heist points in previous season.
+
 [x] Show the players per team and per position for the same team while sorted by points in the 
 previous season then by price if there is a tie
+
 [x] Search for a player by name
+
 [x] Since the list of all players per position is too long, you should allow the user to show 
 more players
+
 [x] Ensure team cost does not exceed £100 and no more than 3 players are selected from any 
 one team.
 
